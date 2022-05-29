@@ -1,3 +1,26 @@
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/700.css";
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/700.css';
+
+.fastflapimg {
+  width: min(60%, 400px);
+}
+.fastflapcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-stuff {
+  display: flex;
+  
+  align-items: center;column-gap: .6em;
+}
+#spec {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.auto{
+display: flex;flex-flow: column;justify-content: center;align-items: flex-start;}
