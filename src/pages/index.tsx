@@ -5,8 +5,7 @@ import VideoSection from '@/components/video-section';
 import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
 import CasesSection from '@/components/cases-section';
-import SocialProof from '@/components/social-proof';
-import PricingTable from '@/components/pricing-table';
+
 import Footer from '@/components/footer';
 
 export default function Home() {
@@ -19,11 +18,9 @@ export default function Home() {
       <Header />
       <main>
         <VideoSection />
-        <ListSection />
         <FeatureSection />
+        <ListSection />
         <CasesSection />
-        <SocialProof />
-        <PricingTable />
       </main>
       <Footer />
     </Page>

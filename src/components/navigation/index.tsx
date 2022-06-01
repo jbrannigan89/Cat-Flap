@@ -15,34 +15,18 @@ type Link = {
 const links = [
   {
     label: `Features`,
-    href: `/`,
+    href: `#Design`,
   },
   {
-    label: `Testimonials`,
-    href: `/`,
-  },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
-  {
-    label: `Blog`,
-    href: `/`,
+    label: `Instructions`,
+    href: `#Instructions`,
   },
 ];
 
 const secondaryLinks = [
   {
-    label: `Contact sales`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
-  },
-  {
-    label: `Get Started`,
-    href: `/`,
+    label: `Contact Us`,
+    href: `#footer`,
   },
 ];
 
@@ -120,7 +104,13 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <img
+                className={tw(`h-10 w-10`)}
+                src="../../../images/bengal-cat-svgrepo-com.svg"
+                alt="logo"
+                width={48}
+                height={48}
+              />
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
@@ -136,13 +126,7 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-          <div className={tw(`hidden md:block`)}>
-            <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
-            </div>
-          </div>
+          <div className={tw(`hidden md:block`)} />
           <div className={tw(`-mr-2 flex md:hidden`)}>
             <MenuButton showMenu={showMenu} toggleMenu={toggleMenu} />
           </div>
